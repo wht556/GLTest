@@ -1,0 +1,110 @@
+2020/05/12-10:10:56 [main] INFO  com.gl.gl_wechat.GlWechatApplication- Starting GlWechatApplication on LAPTOP-UFUB5A9M with PID 16292 (C:\workSoft\ideaWorkSpace\gl_wechat\target\classes started by zhaoCong in C:\workSoft\ideaWorkSpace\gl_wechat)
+2020/05/12-10:10:56 [main] INFO  com.gl.gl_wechat.GlWechatApplication- The following profiles are active: dev
+2020/05/12-10:10:57 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8890 (http)
+2020/05/12-10:10:57 [main] INFO  org.apache.coyote.http11.Http11NioProtocol- Initializing ProtocolHandler ["http-nio-8890"]
+2020/05/12-10:10:57 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2020/05/12-10:10:57 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020/05/12-10:10:57 [main] INFO  org.apache.catalina.core.AprLifecycleListener- An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020/05/12-10:10:57 [main] INFO  org.apache.catalina.core.AprLifecycleListener- Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020/05/12-10:10:57 [main] INFO  org.apache.catalina.core.AprLifecycleListener- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020/05/12-10:10:57 [main] INFO  org.apache.catalina.core.AprLifecycleListener- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020/05/12-10:10:57 [main] INFO  org.apache.catalina.core.AprLifecycleListener- OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020/05/12-10:10:57 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2020/05/12-10:10:57 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 879 ms
+2020/05/12-10:10:57 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2020/05/12-10:10:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol- Starting ProtocolHandler ["http-nio-8890"]
+2020/05/12-10:10:58 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8890 (http) with context path ''
+2020/05/12-10:10:58 [main] INFO  com.gl.gl_wechat.GlWechatApplication- Started GlWechatApplication in 1.824 seconds (JVM running for 3.055)
+2020/05/12-10:11:28 [http-nio-8890-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/05/12-10:11:28 [http-nio-8890-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/12-10:11:28 [http-nio-8890-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 4 ms
+2020/05/12-10:11:28 [http-nio-8890-exec-1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2020/05/12-10:11:29 [http-nio-8890-exec-1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2020/05/12-10:11:29 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- ==>  Preparing: SELECT 1 from superadmin WHERE phone = ? 
+2020/05/12-10:11:29 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- ==> Parameters: 15751776801(String)
+2020/05/12-10:11:29 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- <==      Total: 1
+2020/05/12-10:12:35 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- ==>  Preparing: SELECT 1 from superadmin WHERE phone = ? 
+2020/05/12-10:12:35 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- ==> Parameters: 15751776801(String)
+2020/05/12-10:12:35 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- <==      Total: 1
+2020/05/12-10:12:35 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- ==>  Preparing: SELECT productName, model, NO, bindDate, bindLatLongitude, cardNo, ID, deviceNO, manufacturer, phone, bindAddress FROM bind WHERE STATUS = '1' limit ?,? 
+2020/05/12-10:12:35 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- ==> Parameters: 0(Integer), 10(Integer)
+2020/05/12-10:12:35 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- <==      Total: 9
+2020/05/12-11:04:15 [main] INFO  com.gl.gl_wechat.GlWechatApplication- Starting GlWechatApplication on LAPTOP-UFUB5A9M with PID 7760 (C:\workSoft\ideaWorkSpace\gl_wechat\target\classes started by zhaoCong in C:\workSoft\ideaWorkSpace\gl_wechat)
+2020/05/12-11:04:15 [main] INFO  com.gl.gl_wechat.GlWechatApplication- The following profiles are active: dev
+2020/05/12-11:04:15 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8890 (http)
+2020/05/12-11:04:15 [main] INFO  org.apache.coyote.http11.Http11NioProtocol- Initializing ProtocolHandler ["http-nio-8890"]
+2020/05/12-11:04:15 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2020/05/12-11:04:15 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020/05/12-11:04:15 [main] INFO  org.apache.catalina.core.AprLifecycleListener- An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020/05/12-11:04:15 [main] INFO  org.apache.catalina.core.AprLifecycleListener- Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020/05/12-11:04:15 [main] INFO  org.apache.catalina.core.AprLifecycleListener- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020/05/12-11:04:15 [main] INFO  org.apache.catalina.core.AprLifecycleListener- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020/05/12-11:04:15 [main] INFO  org.apache.catalina.core.AprLifecycleListener- OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020/05/12-11:04:16 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2020/05/12-11:04:16 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 832 ms
+2020/05/12-11:04:16 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2020/05/12-11:04:16 [main] INFO  org.apache.coyote.http11.Http11NioProtocol- Starting ProtocolHandler ["http-nio-8890"]
+2020/05/12-11:04:16 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8890 (http) with context path ''
+2020/05/12-11:04:16 [main] INFO  com.gl.gl_wechat.GlWechatApplication- Started GlWechatApplication in 1.667 seconds (JVM running for 2.688)
+2020/05/12-11:05:12 [http-nio-8890-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/05/12-11:05:12 [http-nio-8890-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/12-11:05:12 [http-nio-8890-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 4 ms
+2020/05/12-11:05:12 [http-nio-8890-exec-1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2020/05/12-11:05:12 [http-nio-8890-exec-1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2020/05/12-11:05:12 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- ==>  Preparing: SELECT 1 from superadmin WHERE phone = ? 
+2020/05/12-11:05:12 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- ==> Parameters: 15751778891(String)
+2020/05/12-11:05:12 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- <==      Total: 0
+2020/05/12-11:05:12 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selectUserList- ==>  Preparing: SELECT * FROM admin WHERE phone = ? 
+2020/05/12-11:05:12 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selectUserList- ==> Parameters: 15751778891(String)
+2020/05/12-11:05:12 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selectUserList- <==      Total: 1
+2020/05/12-11:05:29 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- ==>  Preparing: SELECT 1 from superadmin WHERE phone = ? 
+2020/05/12-11:05:29 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- ==> Parameters: 15751778891(String)
+2020/05/12-11:05:29 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- <==      Total: 0
+2020/05/12-11:05:29 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- ==>  Preparing: SELECT productName, model, NO, bindDate, bindLatLongitude, cardNo, ID, deviceNO, manufacturer, phone, bindAddress FROM bind WHERE STATUS = '1' AND phone = ? limit ?,? 
+2020/05/12-11:05:29 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- ==> Parameters: 15751778891(String), 0(Integer), 10(Integer)
+2020/05/12-11:05:29 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- <==      Total: 0
+2020/05/12-11:38:20 [main] INFO  com.gl.gl_wechat.GlWechatApplication- Starting GlWechatApplication on LAPTOP-UFUB5A9M with PID 4904 (C:\workSoft\ideaWorkSpace\gl_wechat\target\classes started by zhaoCong in C:\workSoft\ideaWorkSpace\gl_wechat)
+2020/05/12-11:38:20 [main] INFO  com.gl.gl_wechat.GlWechatApplication- The following profiles are active: dev
+2020/05/12-11:38:20 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8890 (http)
+2020/05/12-11:38:20 [main] INFO  org.apache.coyote.http11.Http11NioProtocol- Initializing ProtocolHandler ["http-nio-8890"]
+2020/05/12-11:38:20 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2020/05/12-11:38:20 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020/05/12-11:38:20 [main] INFO  org.apache.catalina.core.AprLifecycleListener- An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020/05/12-11:38:20 [main] INFO  org.apache.catalina.core.AprLifecycleListener- Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020/05/12-11:38:20 [main] INFO  org.apache.catalina.core.AprLifecycleListener- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020/05/12-11:38:20 [main] INFO  org.apache.catalina.core.AprLifecycleListener- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020/05/12-11:38:20 [main] INFO  org.apache.catalina.core.AprLifecycleListener- OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020/05/12-11:38:21 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2020/05/12-11:38:21 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 801 ms
+2020/05/12-11:38:21 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2020/05/12-11:38:21 [main] INFO  org.apache.coyote.http11.Http11NioProtocol- Starting ProtocolHandler ["http-nio-8890"]
+2020/05/12-11:38:21 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8890 (http) with context path ''
+2020/05/12-11:38:21 [main] INFO  com.gl.gl_wechat.GlWechatApplication- Started GlWechatApplication in 1.637 seconds (JVM running for 2.698)
+2020/05/12-11:38:28 [http-nio-8890-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/05/12-11:38:28 [http-nio-8890-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/05/12-11:38:28 [http-nio-8890-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 4 ms
+2020/05/12-11:38:29 [http-nio-8890-exec-1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2020/05/12-11:38:29 [http-nio-8890-exec-1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2020/05/12-11:38:29 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- ==>  Preparing: SELECT 1 from superadmin WHERE phone = ? 
+2020/05/12-11:38:29 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- ==> Parameters: 15751778891(String)
+2020/05/12-11:38:29 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- <==      Total: 0
+2020/05/12-11:38:29 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- ==>  Preparing: SELECT productName, model, NO, bindDate, bindLatLongitude, cardNo, ID, deviceNO, manufacturer, phone, bindAddress FROM bind WHERE STATUS = '1' AND phone IN ( SELECT DISTINCT phone FROM admin WHERE company = ( SELECT company FROM admin WHERE phone = ? ) ) limit ?,? 
+2020/05/12-11:38:29 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- ==> Parameters: 15751778891(String), 0(Integer), 10(Integer)
+2020/05/12-11:38:29 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- <==      Total: 7
+2020/05/12-11:41:07 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- ==>  Preparing: SELECT 1 from superadmin WHERE phone = ? 
+2020/05/12-11:41:07 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- ==> Parameters: 15751778891(String)
+2020/05/12-11:41:07 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.selectSuperAdmin- <==      Total: 0
+2020/05/12-11:41:07 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- ==>  Preparing: SELECT productName, model, NO, bindDate, bindLatLongitude, cardNo, ID, deviceNO, manufacturer, phone, bindAddress FROM bind WHERE STATUS = '1' AND phone IN ( SELECT DISTINCT phone FROM admin WHERE company = ( SELECT company FROM admin WHERE phone = ? ) ) and NO = ? and cardNo = ? limit ?,? 
+2020/05/12-11:41:07 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- ==> Parameters: 15751778891(String), 12(String), 1(String), 0(Integer), 10(Integer)
+2020/05/12-11:41:07 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- <==      Total: 1
+2020/05/12-11:45:33 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper- Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.gl.gl_wechat.GlWechatApplicationTests], using SpringBootContextLoader
+2020/05/12-11:45:33 [main] INFO  org.springframework.test.context.support.AbstractContextLoader- Could not detect default resource locations for test class [com.gl.gl_wechat.GlWechatApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020/05/12-11:45:33 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils- Could not detect default configuration classes for test class [com.gl.gl_wechat.GlWechatApplicationTests]: GlWechatApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020/05/12-11:45:33 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper- Found @SpringBootConfiguration com.gl.gl_wechat.GlWechatApplication for test class com.gl.gl_wechat.GlWechatApplicationTests
+2020/05/12-11:45:33 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper- Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020/05/12-11:45:33 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper- Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@22f59fa, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@78fa769e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@16612a51, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@54e041a4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c78324b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@79defdc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@18317edc, org.springframework.test.context.event.EventPublishingTestExecutionListener@4e0ae11f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@238d68ff, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4b86805d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5852c06f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4149c063, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@9cb8225]
+2020/05/12-11:45:33 [main] INFO  com.gl.gl_wechat.GlWechatApplicationTests- Starting GlWechatApplicationTests on LAPTOP-UFUB5A9M with PID 2420 (started by zhaoCong in C:\workSoft\ideaWorkSpace\gl_wechat)
+2020/05/12-11:45:33 [main] INFO  com.gl.gl_wechat.GlWechatApplicationTests- The following profiles are active: dev
+2020/05/12-11:45:35 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2020/05/12-11:45:35 [main] INFO  com.gl.gl_wechat.GlWechatApplicationTests- Started GlWechatApplicationTests in 2.037 seconds (JVM running for 2.981)
+2020/05/12-11:45:35 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'

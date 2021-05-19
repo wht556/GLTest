@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gl.gl_wechat.dao.WXDao">
+    <select id="selectSuperAdmin" resultType="java.lang.String">
+        SELECT 1 from superadmin WHERE phone = #{phone}
+    </select>
+
+    <select id="selectUserList" resultType="com.gl.gl_wechat.entity.UserList">
+        SELECT
+            *
+        FROM
+            admin
+        WHERE
+            phone = #{phone}
+    </select>
+
+    <insert id="addUser">
+        INSERT INTO admin ( phone, NAME, company, number, create_by, create_time )
+        VALUES
+            ( #{admin.phone}, #{admin.name},#{admin.company},#{admin.number},#{admin.create_by},#{admin.create_time} )
+
+    </insert>
+
+    <delete id="delUser">
+        DELETE
+        FROM
+            admin
+        WHERE
+            phone = #{phone}
+    </delete>
+
+    <update id="updateUser">
+        UPDATE admin
+        SET name = #{name},
+        company = #{company},
+        number = #{number},
+        update_by = #{adminPhone},
+        update_time = #{update_time}
+        WHERE
+            phone = #{phone}
+    </update>
+
+    <select id="selUser" resultType="Admin">
+        SELECT
+            phone,
+            NAME,
+            company,
+            number,
+            create_time
+        FROM
+            admin
+         WHERE
+            phone = #{phone}
+    </select>
+
+    <select id="selUserList" resultType="Admin">
+        SELECT
+            phone,
+            NAME,
+            company,
+            number,
+            create_time
+        FROM
+            admin
+        order by NAME
+    </select>
+
+    <select id="selectAdmin" resultType="string">
+        SELECT
+            1
+        FROM
+            ( SELECT phone FROM admin UNION SELECT phone FROM superadmin ) a
+        WHERE
+            a.phone = #{phone}
+    </select>
+
+    <select id="selAdmin" resultType="string">
+        SELECT
+            1
+        FROM
+            admin
+        WHERE
+            phone = #{phone}
+    </select>
+
+    <select id="selBindDevice" parameterType="BindList" resultType="string">
+        SELECT
+            1
+        FROM
+            bind
+        WHERE
+            STATUS = '1'
+            <if test="bindList.NO != null and bindList.NO != ''">
+            AND NO = #{bindList.NO}
+            </if>
+            <if test="bindList.cardNo != null and bindList.cardNo != ''">
+            AND cardNo = #{bindList.cardNo}
+            </if>
+    </select>
+
+    <select id="selExists" resultType="string">
+        SELECT
+            1
+        FROM
+            bind
+        WHERE
+            STATUS = '1'
+        AND bindLatLongitude = #{bindLatLongitude}
+        LIMIT 1
+    </select>
+
+    <update id="unBind" parameterType="BindList">
+        UPDATE bind
+        SET STATUS = '0'
+        WHERE
+            NO = #{bindList.NO}
+            AND cardNo = #{bindList.cardNo}
+    </update>
+
+    <insert id="bindDevice" parameterType="BindList">
+        INSERT INTO bind ( STATUS, phone, productName, model, NO, bindDate,
+                            bindLatLongitude, bindAddress, detailAddress, cardNo,
+                            manufacturer, deviceNO, ID, NOPicture, cardNoPicture)
+        VALUES
+            ( '1', #{bindList.phone}, #{bindList.productName}, #{bindList.model}, #{bindList.NO}, #{bindList.bindDate},
+            #{bindList.bindLatLongitude},  #{bindList.bindAddress}, #{bindList.detailAddress}, #{bindList.cardNo}, #{bindList.manufacturer},
+            #{bindList.deviceNO}, #{bindList.ID}, #{bindList.NOPicture}, #{bindList.cardNoPicture} )
+    </insert>
+
+    <select id="selBindInfo" resultType="BindList">
+        SELECT
+            productName,
+            model,
+            NO,
+            bindDate,
+            bindLatLongitude,
+            cardNo,
+            ID,
+            deviceNO,
+            manufacturer,
+            phone,
+            concat(bindAddress,detailAddress) as bindAddress
+        FROM
+            bind
+        WHERE
+            STATUS = '1'
+        <if test="phone != null and phone != ''">
+            AND phone IN ( SELECT DISTINCT phone FROM admin WHERE company = ( SELECT company FROM admin WHERE phone = #{phone} ) )
+        </if>
+        <if test="NO != null and NO != ''">
+            and NO = #{NO}
+        </if>
+        <if test="cardNo != null and cardNo != ''">
+            and cardNo = #{cardNo}
+        </if>
+        ORDER BY deviceNO
+        limit #{page},#{pageSize}
+    </select>
+
+    <select id="selBindByDate"  resultType="BindList">
+        SELECT
+        productName,
+        model,
+        NO,
+        bindDate,
+        bindLatLongitude,
+        cardNo,
+        ID,
+        deviceNO,
+        manufacturer,
+        phone,
+        bindAddress
+        FROM
+        bind
+        WHERE
+        STATUS = '1'
+        <if test="phone != null and phone != ''">
+            AND phone IN ( SELECT DISTINCT phone FROM admin WHERE company = ( SELECT company FROM admin WHERE phone = #{phone} ) )
+        </if>
+        <if test="startDate != null and startDate != ''">
+            and bindDate &gt;= #{startDate}
+        </if>
+        <if test="endDate != null and endDate != ''">
+            and bindDate &lt;= #{endDate}
+        </if>
+        ORDER BY deviceNO
+        limit #{page},#{pageSize}
+    </select>
+
+</mapper>

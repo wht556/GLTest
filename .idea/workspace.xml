@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c7cc7d2f-3080-4430-8b58-eb6e1089343b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/java/Maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="C:\workSoft\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1a0soNzEIsLDgmCiLQkz1bUyu9S" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gl.gl_wechat.common" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workSoft\ideaWorkSpace\gl_wechat\src\main\resources" />
+      <recent name="C:\workSoft\ideaWorkSpace\gl_wechat\src\main\java\com\gl\gl_wechat\common" />
+      <recent name="C:\workSoft\ideaWorkSpace\gl_wechat\src\main\resources\message" />
+      <recent name="C:\workSoft\ideaWorkSpace\gl_wechat\src\main\resources\conf" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GlWechatApplication">
+    <configuration name="AESUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gl.gl_wechat.common.AESUtil" />
+      <module name="gl_wechat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gl.gl_wechat.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpRequest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gl.gl_wechat.common.HttpRequest" />
+      <module name="gl_wechat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gl.gl_wechat.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertiesUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gl.gl_wechat.common.PropertiesUtil" />
+      <module name="gl_wechat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gl.gl_wechat.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QrCodeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gl.gl_wechat.common.ZXing.QrCodeTest" />
+      <module name="gl_wechat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gl.gl_wechat.common.ZXing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gl.gl_wechat.controller.test" />
+      <module name="gl_wechat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gl.gl_wechat.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GlWechatApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gl_wechat" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gl.gl_wechat.GlWechatApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QrCodeTest" />
+        <item itemvalue="Application.HttpRequest" />
+        <item itemvalue="Application.AESUtil" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.PropertiesUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7cc7d2f-3080-4430-8b58-eb6e1089343b" name="Default Changelist" comment="" />
+      <created>1585884019257</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585884019257</updated>
+      <workItem from="1585884022064" duration="9410000" />
+      <workItem from="1586069365553" duration="275000" />
+      <workItem from="1586069652710" duration="5727000" />
+      <workItem from="1586157935327" duration="3248000" />
+      <workItem from="1586161219106" duration="3223000" />
+      <workItem from="1586175369392" duration="2183000" />
+      <workItem from="1586177565989" duration="25000" />
+      <workItem from="1586178612907" duration="3059000" />
+      <workItem from="1586222738435" duration="18146000" />
+      <workItem from="1586308067996" duration="22136000" />
+      <workItem from="1586349848142" duration="2740000" />
+      <workItem from="1586395026940" duration="2398000" />
+      <workItem from="1586397452605" duration="14552000" />
+      <workItem from="1586497448760" duration="2541000" />
+      <workItem from="1586756065914" duration="9565000" />
+      <workItem from="1586833403259" duration="773000" />
+      <workItem from="1586844689400" duration="1131000" />
+      <workItem from="1586938745641" duration="13000" />
+      <workItem from="1587016479079" duration="4680000" />
+      <workItem from="1587025450884" duration="3927000" />
+      <workItem from="1587106568820" duration="992000" />
+      <workItem from="1587364847076" duration="2622000" />
+      <workItem from="1587434664379" duration="1220000" />
+      <workItem from="1587455044367" duration="6219000" />
+      <workItem from="1587461725485" duration="519000" />
+      <workItem from="1587517514383" duration="201000" />
+      <workItem from="1587519270772" duration="7260000" />
+      <workItem from="1587625698851" duration="1066000" />
+      <workItem from="1587631188765" duration="1204000" />
+      <workItem from="1587633712862" duration="461000" />
+      <workItem from="1587974941484" duration="980000" />
+      <workItem from="1588140783349" duration="2009000" />
+      <workItem from="1588590817562" duration="15000" />
+      <workItem from="1589181775769" duration="1297000" />
+      <workItem from="1589186931761" duration="654000" />
+      <workItem from="1589248113651" duration="2034000" />
+      <workItem from="1589252494779" duration="3542000" />
+      <workItem from="1589509546872" duration="1205000" />
+      <workItem from="1589528839644" duration="1375000" />
+      <workItem from="1589765798732" duration="2310000" />
+      <workItem from="1589879430267" duration="1805000" />
+      <workItem from="1589960204826" duration="2448000" />
+      <workItem from="1589965557325" duration="1341000" />
+      <workItem from="1590024511847" duration="164000" />
+      <workItem from="1590025107843" duration="1254000" />
+      <workItem from="1590382913752" duration="10000" />
+      <workItem from="1590389325680" duration="40000" />
+      <workItem from="1590391240811" duration="637000" />
+      <workItem from="1591950997794" duration="368000" />
+      <workItem from="1592200233599" duration="1796000" />
+      <workItem from="1592794997892" duration="1239000" />
+      <workItem from="1593582623863" duration="5168000" />
+      <workItem from="1593651650437" duration="18663000" />
+      <workItem from="1593738328467" duration="3121000" />
+      <workItem from="1593753019955" duration="31000" />
+      <workItem from="1594192782036" duration="571000" />
+      <workItem from="1594257188183" duration="4885000" />
+      <workItem from="1594604125273" duration="5067000" />
+      <workItem from="1594688764392" duration="2328000" />
+      <workItem from="1621393232215" duration="185000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="448" y="114" key="CommitChangelistDialog2" timestamp="1621393542216">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="448" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1621393542216" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1621393314703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1621393314703" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1621393329271">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1621393329271" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1621393459368">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621393459368" />
+  </component>
+</project>

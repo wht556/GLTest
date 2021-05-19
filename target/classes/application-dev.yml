@@ -1,0 +1,36 @@
+server:
+  port: 8890
+
+spring:
+  datasource:
+    username: root
+    password: admin
+    url: jdbc:mysql://localhost:3306/gl_wechat?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    encoding: UTF-8
+    messages:
+      encoding: UTF-8
+    jackson:
+      date-format: yyyy-MM-dd HH:mm:ss
+      time-zone: GMT+8
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapping.xml
+  config-location: classpath:conf/mybatis-config.xml
+  type-aliases-package: com.example.entity
+
+# 日志配置
+logging:
+  config: classpath:Logback.xml
+  level:
+    root: info
+    com:
+      gl:
+        gl_wechat:
+          dao: debug
+          controller: error
+  pattern:
+    console: '%d{yyyy/MM/dd-HH:mm:ss} [%thread] %-5level %logger- %msg%n'
+    file: '%d{yyyy/MM/dd-HH:mm} [%thread] %-5level %logger- %msg%n'
+  file:
+    name: logs/gl-wxLogin-logging.log

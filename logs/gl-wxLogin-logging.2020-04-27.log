@@ -1,0 +1,83 @@
+2020/04/27-16:16:52 [main] INFO  com.gl.gl_wechat.GlWechatApplication- Starting GlWechatApplication on LAPTOP-UFUB5A9M with PID 16664 (C:\workSoft\ideaWorkSpace\gl_wechat\target\classes started by zhaoCong in C:\workSoft\ideaWorkSpace\gl_wechat)
+2020/04/27-16:16:52 [main] INFO  com.gl.gl_wechat.GlWechatApplication- The following profiles are active: dev
+2020/04/27-16:16:53 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8890 (http)
+2020/04/27-16:16:53 [main] INFO  org.apache.coyote.http11.Http11NioProtocol- Initializing ProtocolHandler ["http-nio-8890"]
+2020/04/27-16:16:53 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2020/04/27-16:16:53 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020/04/27-16:16:53 [main] INFO  org.apache.catalina.core.AprLifecycleListener- An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020/04/27-16:16:53 [main] INFO  org.apache.catalina.core.AprLifecycleListener- Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020/04/27-16:16:53 [main] INFO  org.apache.catalina.core.AprLifecycleListener- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020/04/27-16:16:53 [main] INFO  org.apache.catalina.core.AprLifecycleListener- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020/04/27-16:16:53 [main] INFO  org.apache.catalina.core.AprLifecycleListener- OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020/04/27-16:16:53 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2020/04/27-16:16:53 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1078 ms
+2020/04/27-16:16:53 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2020/04/27-16:16:54 [main] INFO  org.apache.coyote.http11.Http11NioProtocol- Starting ProtocolHandler ["http-nio-8890"]
+2020/04/27-16:16:54 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8890 (http) with context path ''
+2020/04/27-16:16:54 [main] INFO  com.gl.gl_wechat.GlWechatApplication- Started GlWechatApplication in 2.412 seconds (JVM running for 3.656)
+2020/04/27-16:17:25 [http-nio-8890-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/04/27-16:17:25 [http-nio-8890-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/04/27-16:17:25 [http-nio-8890-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 4 ms
+2020/04/27-16:17:25 [http-nio-8890-exec-1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Starting...
+2020/04/27-16:17:26 [http-nio-8890-exec-1] INFO  com.zaxxer.hikari.HikariDataSource- HikariPool-1 - Start completed.
+2020/04/27-16:17:26 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- ==>  Preparing: SELECT productName, model, NO, bindDate, bindLatLongitude, cardNo, ID, deviceNO, manufacturer, phone, bindAddress FROM bind WHERE STATUS = '1' AND phone = ? and NO = ? and cardNo = ? limit ?,? 
+2020/04/27-16:17:26 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- ==> Parameters: 18625185194(String), c23qeqw(String), c23qeqw(String), 0(Integer), 10(Integer)
+2020/04/27-16:17:26 [http-nio-8890-exec-1] DEBUG com.gl.gl_wechat.dao.WXDao.selBindInfo- <==      Total: 0
+2020/04/27-16:18:10 [http-nio-8890-exec-2] DEBUG com.gl.gl_wechat.dao.WXDao.selectAdmin- ==>  Preparing: SELECT 1 FROM ( SELECT phone FROM bind UNION SELECT phone FROM superadmin ) a WHERE a.phone = ? 
+2020/04/27-16:18:10 [http-nio-8890-exec-2] DEBUG com.gl.gl_wechat.dao.WXDao.selectAdmin- ==> Parameters: 15751776801(String)
+2020/04/27-16:18:10 [http-nio-8890-exec-2] DEBUG com.gl.gl_wechat.dao.WXDao.selectAdmin- <==      Total: 1
+2020/04/27-16:18:10 [http-nio-8890-exec-2] DEBUG com.gl.gl_wechat.dao.WXDao.selBindDevice- ==>  Preparing: SELECT 1 FROM bind WHERE STATUS = '1' AND NO = ? AND cardNo = ? 
+2020/04/27-16:18:10 [http-nio-8890-exec-2] DEBUG com.gl.gl_wechat.dao.WXDao.selBindDevice- ==> Parameters: c23qeqw(String), 1111111111(String)
+2020/04/27-16:18:10 [http-nio-8890-exec-2] DEBUG com.gl.gl_wechat.dao.WXDao.selBindDevice- <==      Total: 1
+2020/04/27-16:18:10 [http-nio-8890-exec-2] DEBUG com.gl.gl_wechat.dao.WXDao.unBind- ==>  Preparing: UPDATE bind SET STATUS = '0' WHERE NO = ? AND cardNo = ? 
+2020/04/27-16:18:10 [http-nio-8890-exec-2] DEBUG com.gl.gl_wechat.dao.WXDao.unBind- ==> Parameters: c23qeqw(String), 1111111111(String)
+2020/04/27-16:18:10 [http-nio-8890-exec-2] DEBUG com.gl.gl_wechat.dao.WXDao.unBind- <==    Updates: 2
+2020/04/27-16:18:20 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.selectAdmin- ==>  Preparing: SELECT 1 FROM ( SELECT phone FROM bind UNION SELECT phone FROM superadmin ) a WHERE a.phone = ? 
+2020/04/27-16:18:20 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.selectAdmin- ==> Parameters: 15751776801(String)
+2020/04/27-16:18:20 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.selectAdmin- <==      Total: 1
+2020/04/27-16:18:20 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.selBindDevice- ==>  Preparing: SELECT 1 FROM bind WHERE STATUS = '1' AND NO = ? AND cardNo = ? 
+2020/04/27-16:18:20 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.selBindDevice- ==> Parameters: c23qeqw(String), 1111111111(String)
+2020/04/27-16:18:20 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.selBindDevice- <==      Total: 0
+2020/04/27-16:18:20 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.bindDevice- ==>  Preparing: INSERT INTO bind ( STATUS, phone, productName, model, NO, bindDate, bindLatLongitude, bindAddress, cardNo, manufacturer, deviceNO, ID ) VALUES ( '1', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020/04/27-16:18:20 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.bindDevice- ==> Parameters: 15751776801(String), qwew(String), sadqe(String), c23qeqw(String), 2020-04-03 13:40:45(String), 424.232,2.5255(String), 12123135bvj(String), 1111111111(String), ads(String), asd(String), ads(String)
+2020/04/27-16:18:20 [http-nio-8890-exec-3] DEBUG com.gl.gl_wechat.dao.WXDao.bindDevice- <==    Updates: 1
+2020/04/27-16:18:22 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selectAdmin- ==>  Preparing: SELECT 1 FROM ( SELECT phone FROM bind UNION SELECT phone FROM superadmin ) a WHERE a.phone = ? 
+2020/04/27-16:18:22 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selectAdmin- ==> Parameters: 15751776801(String)
+2020/04/27-16:18:22 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selectAdmin- <==      Total: 1
+2020/04/27-16:18:22 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selBindDevice- ==>  Preparing: SELECT 1 FROM bind WHERE STATUS = '1' AND NO = ? AND cardNo = ? 
+2020/04/27-16:18:22 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selBindDevice- ==> Parameters: c23qeqw(String), 1111111111(String)
+2020/04/27-16:18:22 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.selBindDevice- <==      Total: 1
+2020/04/27-16:18:22 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.unBind- ==>  Preparing: UPDATE bind SET STATUS = '0' WHERE NO = ? AND cardNo = ? 
+2020/04/27-16:18:22 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.unBind- ==> Parameters: c23qeqw(String), 1111111111(String)
+2020/04/27-16:18:22 [http-nio-8890-exec-4] DEBUG com.gl.gl_wechat.dao.WXDao.unBind- <==    Updates: 3
+2020/04/27-16:18:24 [http-nio-8890-exec-5] DEBUG com.gl.gl_wechat.dao.WXDao.selectAdmin- ==>  Preparing: SELECT 1 FROM ( SELECT phone FROM bind UNION SELECT phone FROM superadmin ) a WHERE a.phone = ? 
+2020/04/27-16:18:24 [http-nio-8890-exec-5] DEBUG com.gl.gl_wechat.dao.WXDao.selectAdmin- ==> Parameters: 15751776801(String)
+2020/04/27-16:18:24 [http-nio-8890-exec-5] DEBUG com.gl.gl_wechat.dao.WXDao.selectAdmin- <==      Total: 1
+2020/04/27-16:18:24 [http-nio-8890-exec-5] DEBUG com.gl.gl_wechat.dao.WXDao.selBindDevice- ==>  Preparing: SELECT 1 FROM bind WHERE STATUS = '1' AND NO = ? AND cardNo = ? 
+2020/04/27-16:18:24 [http-nio-8890-exec-5] DEBUG com.gl.gl_wechat.dao.WXDao.selBindDevice- ==> Parameters: c23qeqw(String), 1111111111(String)
+2020/04/27-16:18:24 [http-nio-8890-exec-5] DEBUG com.gl.gl_wechat.dao.WXDao.selBindDevice- <==      Total: 0
+2020/04/27-16:18:24 [http-nio-8890-exec-5] DEBUG com.gl.gl_wechat.dao.WXDao.bindDevice- ==>  Preparing: INSERT INTO bind ( STATUS, phone, productName, model, NO, bindDate, bindLatLongitude, bindAddress, cardNo, manufacturer, deviceNO, ID ) VALUES ( '1', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020/04/27-16:18:24 [http-nio-8890-exec-5] DEBUG com.gl.gl_wechat.dao.WXDao.bindDevice- ==> Parameters: 15751776801(String), qwew(String), sadqe(String), c23qeqw(String), 2020-04-03 13:40:45(String), 424.232,2.5255(String), 12123135bvj(String), 1111111111(String), ads(String), asd(String), ads(String)
+2020/04/27-16:18:24 [http-nio-8890-exec-5] DEBUG com.gl.gl_wechat.dao.WXDao.bindDevice- <==    Updates: 1
+2020/04/27-16:24:21 [main] INFO  com.gl.gl_wechat.GlWechatApplication- Starting GlWechatApplication on LAPTOP-UFUB5A9M with PID 8548 (C:\workSoft\ideaWorkSpace\gl_wechat\target\classes started by zhaoCong in C:\workSoft\ideaWorkSpace\gl_wechat)
+2020/04/27-16:24:21 [main] INFO  com.gl.gl_wechat.GlWechatApplication- The following profiles are active: dev
+2020/04/27-16:24:22 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8890 (http)
+2020/04/27-16:24:22 [main] INFO  org.apache.coyote.http11.Http11NioProtocol- Initializing ProtocolHandler ["http-nio-8890"]
+2020/04/27-16:24:22 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2020/04/27-16:24:22 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020/04/27-16:24:22 [main] INFO  org.apache.catalina.core.AprLifecycleListener- An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020/04/27-16:24:22 [main] INFO  org.apache.catalina.core.AprLifecycleListener- Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020/04/27-16:24:22 [main] INFO  org.apache.catalina.core.AprLifecycleListener- APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020/04/27-16:24:22 [main] INFO  org.apache.catalina.core.AprLifecycleListener- APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020/04/27-16:24:22 [main] INFO  org.apache.catalina.core.AprLifecycleListener- OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020/04/27-16:24:22 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2020/04/27-16:24:22 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 811 ms
+2020/04/27-16:24:23 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2020/04/27-16:24:23 [main] INFO  org.apache.coyote.http11.Http11NioProtocol- Starting ProtocolHandler ["http-nio-8890"]
+2020/04/27-16:24:23 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8890 (http) with context path ''
+2020/04/27-16:24:23 [main] INFO  com.gl.gl_wechat.GlWechatApplication- Started GlWechatApplication in 1.607 seconds (JVM running for 2.589)
+2020/04/27-16:24:35 [http-nio-8890-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020/04/27-16:24:35 [http-nio-8890-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Initializing Servlet 'dispatcherServlet'
+2020/04/27-16:24:35 [http-nio-8890-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- Completed initialization in 4 ms
+2020/04/27-16:24:35 [http-nio-8890-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver- Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'phone' is not present]
+2020/04/27-16:25:02 [http-nio-8890-exec-2] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver- Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'token' is not present]
